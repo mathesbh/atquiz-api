@@ -8,12 +8,12 @@ namespace AtQuiz.Models
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Este campo é obrigatorio!")]
-        [MinLength(3, ErrorMessage = "Este campo deve conter no minimo 3 caracteres")]
+        [Required(ErrorMessage = "Este campo é obrigatório!")]
+        [MinLength(3, ErrorMessage = "Este campo deve conter no mínimo 3 caracteres")]
         public string Title { get; set; }
 
-        [Required(ErrorMessage = "Este campo é obrigatorio!")]
-        [MinLength(3, ErrorMessage = "Este campo deve conter no minimo 3 caracteres")]
+        [Required(ErrorMessage = "Este campo é obrigatório!")]
+        [MinLength(3, ErrorMessage = "Este campo deve conter no mínimo 3 caracteres")]
         public string User { get; set; }
 
         [DataType(DataType.Date)]
