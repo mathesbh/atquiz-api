@@ -11,5 +11,7 @@ namespace AtQuiz.Data
         }
 
         public DbSet<Questionnaire> Questionnaires { get; set; }
+        public DbSet<Answer> Answers { get; set; }
+
     }
 }
