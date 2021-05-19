@@ -36,5 +36,12 @@ namespace AtQuiz.Controllers
                 return BadRequest(ModelState);
             }
         }
+        [HttpGet]
+        [Route("{id:int}")]
+        public async Task<ActionResult<Questionnaire>> GetById([FromServices] DataContext context, int id)
+        {
+            var quiz = await context.Questionnaires.FirstOrDefaultAsync(item => item.Id == id);
+            return quiz;
+        }
     }
 }
